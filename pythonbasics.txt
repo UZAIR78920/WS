@@ -61,3 +61,7 @@ print("\nSustainable Cities (carbon footprint < 400 Kg CO2):")
 for city in sustainable_cities:
     print(f"{city["city"]} - {city["carbon_footprint"]} Kg CO2")
 
+highest_footprint_city=max(climate_data,key=lambda city: city["carbon_footprint"])
+print(f"\nCity with the highest carbon footprint:")
+print(f"{highest_footprint_city["city"]} - {highest_footprint_city["carbon_footprint"]} Kg CO2")
+
