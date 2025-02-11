@@ -65,3 +65,6 @@ highest_footprint_city=max(climate_data,key=lambda city: city["carbon_footprint"
 print(f"\nCity with the highest carbon footprint:")
 print(f"{highest_footprint_city["city"]} - {highest_footprint_city["carbon_footprint"]} Kg CO2")
 
+def calc_carbon_footprint(energy_cunsumption,emission_factor):
+    return energy_cunsumption*emission_factor
+
