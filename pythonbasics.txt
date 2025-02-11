@@ -68,3 +68,8 @@ print(f"{highest_footprint_city["city"]} - {highest_footprint_city["carbon_footp
 def calc_carbon_footprint(energy_cunsumption,emission_factor):
     return energy_cunsumption*emission_factor
 
+energy_cunsumption=1000
+emission_factor=0.475
+carbon_footprint= calc_carbon_footprint(energy_cunsumption,emission_factor)
+print(f"Carbon Footprint: {carbon_footprint} Kg CO2")
+
