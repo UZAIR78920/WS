@@ -32,3 +32,7 @@ city_data={
     "is_sustainable": False
 }
 print(f"City Data: {city_data}")
+
+city_name,temp,carbon_footpoint="City x",26,500.75
+print(f"City Name:{city_name}\ntemperature: {temp}*C\ncarbon footpoint:{carbon_footpoint} Kg CO2")
+
