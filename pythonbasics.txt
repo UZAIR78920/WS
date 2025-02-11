@@ -49,3 +49,9 @@ print("Cities with high temp (>26*C):")
 for city in high_temp_cities:
     print(f"{city["city"]} - {city["temp"]}")
 
+total_carbon=0
+for city in climate_data:
+    total_carbon+=city["carbon_footprint"]
+avg_carbon_footprint=total_carbon/len(climate_data)
+print(f"\nAvg carbon footprint : {avg_carbon_footprint:.2f} Kg CO2")
+
