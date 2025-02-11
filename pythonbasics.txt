@@ -36,3 +36,16 @@ print(f"City Data: {city_data}")
 city_name,temp,carbon_footpoint="City x",26,500.75
 print(f"City Name:{city_name}\ntemperature: {temp}*C\ncarbon footpoint:{carbon_footpoint} Kg CO2")
 
+climate_data=[
+    {"city":"City A","temp":25,"carbon_footprint":500},
+    {"city":"City B","temp":30,"carbon_footprint":350},
+    {"city":"City C","temp":22,"carbon_footprint":600},
+    {"city":"City D","temp":15,"carbon_footprint":200},
+    {"city":"City E","temp":28,"carbon_footprint":450}
+]
+high_temp_threshold=26
+high_temp_cities=[city for city in climate_data if city["temp"]>high_temp_threshold]
+print("Cities with high temp (>26*C):")
+for city in high_temp_cities:
+    print(f"{city["city"]} - {city["temp"]}")
+
