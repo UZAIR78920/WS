@@ -174,3 +174,7 @@ energy_encoded_df=pd.get_dummies(energy_df,columns=["Energy Source"])
 print("\nData after One-Hot encoding categorical variables:")
 print(energy_encoded_df)
 
+energy_encoded_df["consumption per $million"]=energy_encoded_df["Energy Consumption (MWh)"]/energy_encoded_df["Cost (Million $)"]
+print("data with new feature(consumption per $million)")
+print(energy_encoded_df)
+
