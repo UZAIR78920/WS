@@ -105,3 +105,8 @@ print(high_capacity_project)
 project_df["cost per MW"]=project_df["Cost (Million $)"]
 print("\n DataFrame with cost per MW:")
 print(project_df)     
+
+
+group_data=project_df.groupby("Technology")["Capacity (MW)"].sum()
+print("\n Total Capcitybby Technology :")
+print(group_data)
