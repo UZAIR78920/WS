@@ -120,3 +120,6 @@ print(energy_consumption)
 
 total_consumption = np.sum (energy_consumption)
 print(f"\n total Energy consumption :{total_consumption} MWh")
+
+mean_consumption = np.mean(energy_consumption)
+print(f"\n total Energy consumption :{mean_consumption:.2f} MWh")
