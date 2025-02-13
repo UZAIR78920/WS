@@ -57,7 +57,7 @@ print(f"\nAvg carbon footprint : {avg_carbon_footprint:.2f} Kg CO2")
 
 sustainability_threshold=400
 sustainable_cities=list(filter(lambda city: city["carbon_footprint"]<sustainability_threshold,climate_data))
-print("\nSustainable Cities (carbon footprint < 400 Kg CO2):")
+print("\nSustainable Cities (carbon footprint < 400 Kg CO2):"
 for city in sustainable_cities:
     print(f"{city["city"]} - {city["carbon_footprint"]} Kg CO2")
 
@@ -85,4 +85,8 @@ data = {
     "Location":["California","Texas","Washington","Nevada","Idaho"],
     "Completion Year":[2023,2024,2022,2025,2023]
 }
+
+renewable_series=pd.Series(renewable_sources)
+print("Renewable Energy Sources:")
+print(renewable_series)
 
