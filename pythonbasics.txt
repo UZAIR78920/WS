@@ -102,3 +102,6 @@ high_capacity_project=project_df[project_df["Capacity (MW)"]>100]
 print("\n project with capacity greater than 100 MW:")
 print(high_capacity_project)
       
+project_df["cost per MW"]=project_df["Cost (Million $)"]
+print("\n DataFrame with cost per MW:")
+print(project_df)     
