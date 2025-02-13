@@ -73,6 +73,8 @@ emission_factor=0.475
 carbon_footprint= calc_carbon_footprint(energy_cunsumption,emission_factor)
 print(f"Carbon Footprint: {carbon_footprint} Kg CO2")
 
+pip install pandas numpy
+
 import pandas as pd
 renewable_sources=["Solar","Wind","Hydropower","Geothermal","Biomass"]
 data = {
