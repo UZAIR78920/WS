@@ -162,3 +162,11 @@ energy_df[["Energy Consumption (MWh)","Cost (Million $)"]]=scaler.fit_transform(
 print("\nData after normalization(Min-Max Scaling):")
 print(energy_df)
 
+from sklearn.preprocessing import StandardScaler
+scaler=StandardScaler()
+energy_df[["Energy Consumption (MWh)","Cost (Million $)"]]=scaler.fit_transform(
+    energy_df[["Energy Consumption (MWh)","Cost (Million $)"]]
+)
+print("\nData after normalization(Min-Max Scaling):")
+print(energy_df)
+
