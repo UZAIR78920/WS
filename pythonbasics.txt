@@ -110,3 +110,9 @@ print(project_df)
 group_data=project_df.groupby("Technology")["Capacity (MW)"].sum()
 print("\n Total Capcitybby Technology :")
 print(group_data)
+
+
+import numpy as np
+energy_consumption= np.array([1200,3400,2900,2500])
+print("energy consumption (in MWh) for Different Renewable source:")
+print(energy_consumption)
