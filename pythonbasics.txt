@@ -90,3 +90,7 @@ renewable_series=pd.Series(renewable_sources)
 print("Renewable Energy Sources:")
 print(renewable_series)
 
+project_df=pd.DataFrame(data)
+print("\nFreen Technology Projects DataFrame:")
+print(project_df)
+
