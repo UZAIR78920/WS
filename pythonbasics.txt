@@ -94,3 +94,6 @@ project_df=pd.DataFrame(data)
 print("\nFreen Technology Projects DataFrame:")
 print(project_df)
 
+
+print("\n green technology project DataFrame:")
+print(project_df["Project"])
