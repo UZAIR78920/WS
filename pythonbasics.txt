@@ -98,7 +98,7 @@ print(project_df)
 print("\n List of project:")
 print(project_df["Project"])
 
-high_capacity_project=project_df[project_df["Capacity(MW)"]>100]
+high_capacity_project=project_df[project_df["Capacity (MW)"]>100]
 print("\n project with capacity greater than 100 MW:")
 print(high_capacity_project)
       
