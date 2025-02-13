@@ -147,3 +147,8 @@ forward_filled_df=energy_df.fillna(method="ffill")
 print("\ndata After Forward Filling:")
 print(forward_filled_df)
 
+energy_df["Energy Consumption (MWh)"].fillna(energy_df ["Energy Consumption (MWh)"].mean(), inplace=True)
+energy_df ["Cost (Million $)"].fillna(energy_df ["Cost (Million $)"].mean(), inplace=True)
+print("\nData After Imputing Missing Values with Mean:")
+print(energy_df)
+
