@@ -95,5 +95,5 @@ print("\nFreen Technology Projects DataFrame:")
 print(project_df)
 
 
-print("\n green technology project DataFrame:")
+print("\n List of project:")
 print(project_df["Project"])
