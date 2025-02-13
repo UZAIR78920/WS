@@ -116,3 +116,7 @@ import numpy as np
 energy_consumption= np.array([1200,3400,2900,2500])
 print("energy consumption (in MWh) for Different Renewable source:")
 print(energy_consumption)
+
+
+total_consumption = np.sum (energy_consumption)
+print(f"\n total Energy consumption :{total_consumption} MWh")
