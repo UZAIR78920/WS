@@ -143,3 +143,7 @@ cleaned_df=energy_df.dropna()
 print("\nData After Removing Rows with Missing values:")
 print(cleaned_df)
 
+forward_filled_df=energy_df.fillna(method="ffill")
+print("\ndata After Forward Filling:")
+print(forward_filled_df)
+
