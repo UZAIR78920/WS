@@ -170,3 +170,7 @@ energy_df[["Energy Consumption (MWh)","Cost (Million $)"]]=scaler.fit_transform(
 print("\nData after normalization(Standard Scaling):")
 print(energy_df)
 
+energy_encoded_df=pd.get_dummies(energy_df,columns=["Energy Source"])
+print("\nData after One-Hot encoding categorical variables:")
+print(energy_encoded_df)
+
