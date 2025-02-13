@@ -139,3 +139,7 @@ energy_df=pd.DataFrame(data)
 print("Original Energy Data with Missing Values:")
 print(energy_df)
 
+cleaned_df=energy_df.dropna()
+print("\nData After Removing Rows with Missing values:")
+print(cleaned_df)
+
