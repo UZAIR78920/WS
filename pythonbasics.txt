@@ -251,3 +251,16 @@ df_reg = pd.DataFrame({
 })
 sns.regplot(x='Energy Consumption', y='Carbon Emissions', data=df_reg)
 plt.show()
+
+energy_values = [100,200,300,400,500]
+carbon_emisssions=[10,20,30,40,50]
+df_reg=pd.DataFrame({
+    'Energy Consumption': energy_values,
+    'Carbon emissions': carbon_emisssions
+})
+
+sns.regplot(x='Energy Consumption',y='Carbon emissions',data=df_reg)
+plt.title('Energy Consumption vs carbon emissions')
+plt.xlabel('Energy Consumption(MWh)')
+plt.ylabel('carbon emissions(kg CO2)')
+plt.show()
