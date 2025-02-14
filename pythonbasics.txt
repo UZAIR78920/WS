@@ -234,3 +234,7 @@ correlation_matrix=df.corr()
 sns.heatmap(correlation_matrix,annot=True,cmap='coolwarm',linewidth=0.5)
 plt.title('Correlation between energy sources')
 plt.show()
+
+sns.boxplot(data=df)
+plt.title('Distribution of energy consumption by source')
+plt.show()
