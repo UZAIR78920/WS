@@ -178,3 +178,5 @@ energy_encoded_df["consumption per $million"]=energy_encoded_df["Energy Consumpt
 print("data with new feature(consumption per $million)")
 print(energy_encoded_df)
 
+pip install matplotlib
+
