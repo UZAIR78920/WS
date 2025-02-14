@@ -207,3 +207,12 @@ plt.title('Energy Consumption vs carbon emissions')
 plt.xlabel('Energy Consumption(MWh)')
 plt.ylabel('carbon emissions(kg CO2)')
 plt.show()
+
+plt.bar(energy_sources, energy_values, color='orange' ,edgecolor='black',linewidth=2)
+plt.title('Customised Energy Consumption by renewable energy source',fontsize=14,fontweight='bold')
+plt.xlabel('Energy source',fontsize=12)
+plt.ylabel('Energy Consumption(MWh)',fontsize=12)
+
+plt.grid(True, linestyle='--', alpha=0.7)
+plt.legend(['Energy Consumption'],loc='upper left')
+plt.show()
