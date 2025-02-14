@@ -180,3 +180,12 @@ print(energy_encoded_df)
 
 pip install matplotlib
 
+import matplotlib.pyplot as plt
+months=['Jan','Feb','Mar','Apr','May','Jun']
+energy_consumption=[1200,1300,1100,1500,1400,1600]
+plt.plot(months, energy_consumption, marker='o', color='b', linestyle='--')
+plt.title('Energy Consumption over 6 months')
+plt.xlabel('Month')
+plt.ylabel('Energy Consumption(MWh)')
+plt.show()
+
