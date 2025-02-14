@@ -189,3 +189,11 @@ plt.xlabel('Month')
 plt.ylabel('Energy Consumption(MWh)')
 plt.show()
 
+energy_sources=['Solar','wind','Hydropower','Biomass']
+energy_values=[1200,3400,2900,2500]
+plt.bar(energy_sources, energy_values, color='green')
+plt.title('Energy Consumption by renewable energy source')
+plt.xlabel('Energy source')
+plt.ylabel('Energy Consumption(MWh)')
+plt.show()
+
