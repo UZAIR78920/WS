@@ -200,3 +200,10 @@ plt.show()
 plt.pie(energy_values, labels=energy_sources, autopct='%1.1f%%', colors=['gold','lightblue','lightgreen','coral'])
 plt.title('Energy consumption share by sources')
 plt.show()
+
+carbon_emissions = [200,500,450,300]
+plt.scatter(energy_values,carbon_emissions, color='red')
+plt.title('Energy Consumption vs carbon emissions')
+plt.xlabel('Energy Consumption(MWh)')
+plt.ylabel('carbon emissions(kg CO2)')
+plt.show()
