@@ -216,3 +216,17 @@ plt.ylabel('Energy Consumption(MWh)',fontsize=12)
 plt.grid(True, linestyle='--', alpha=0.7)
 plt.legend(['Energy Consumption'],loc='upper left')
 plt.show()
+
+import seaborn as sns
+import pandas as pd
+import matplotlib.pyplot as plt 
+data={
+    "solar":[1200,1500,1300],
+    "wind":[3400,1500,3200],
+    "hydropower":[2500,3100,2800],
+    "biomass":[2500,2700,2400]
+}
+df=pd.DataFrame(data)
+sns.pairplot(df)
+plt.show()
+
