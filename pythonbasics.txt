@@ -238,3 +238,16 @@ plt.show()
 sns.boxplot(data=df)
 plt.title('Distribution of energy consumption by source')
 plt.show()
+
+sns.violinplot(data=df)
+plt.title('Distribution of energy consumption by source')
+plt.show()
+
+energy_values = [100, 200, 300, 400, 500]
+carbon_emissions = [10, 20, 30, 40, 50]
+df_reg = pd.DataFrame({
+    'Energy Consumption': energy_values,
+    'Carbon Emissions': carbon_emissions
+})
+sns.regplot(x='Energy Consumption', y='Carbon Emissions', data=df_reg)
+plt.show()
