@@ -307,3 +307,9 @@ plt.title('Confusion Matrix')
 plt.show()
 
 print(classification_report(y_test,y_pred,target_names=['Not Sustainable','Sustainable']))c
+
+coefficients = pd.DataFrame(model.coef_.T, index=x.columns, columns=['Coefficient'])
+print(coefficients)
+
+import joblib
+joblib.dump(model, 'lrmodel sustainable.pkl')
