@@ -296,3 +296,12 @@ plt.plot(x_test,y_pred, color='red', label='Reggression Line')
 plt.xlabel('Temperature (°C)')
 plt.ylabel('Energy Consumption (kWh)')
 plt.show()
+
+conf_matrix = confusion_matrix(y_test, y_pred)
+sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues',
+            xticklabels=['Not Sustainable','Sustainable'],
+            yticklabels=['Not Sustainable','Sustainable'])
+plt.xlabel('Predicted')
+plt.ylabel('Actual')
+plt.title('Confusion Matrix')
+plt.show()
