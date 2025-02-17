@@ -346,3 +346,12 @@ kmeans = KMeans(n_clusters=k, random_state=42)
 data['cluster'] = kmeans.fit_predict(data_scaled)
 print(data.head())
 
+sil_score=silhouette_score(data_scaled, data['cluster'])
+print(f'Silhouette Score: {sil_score}')
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+plt.figure(figsize=(8, 6))
+sns.scatterplot(x='carbon_emissions', y='pollution_level', hue='cluster',
+                data=data, palette='viridis', s=100, alpha=0.7, edgecolor='k')
+
