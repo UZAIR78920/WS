@@ -341,3 +341,8 @@ plt.xlable("Number of Clusters(k)")
 plt.ylable("Inertia")
 plt.show()
 
+k=7
+kmeans = KMeans(n_clusters=k, random_state=42)
+data['cluster'] = kmeans.fit_predict(data_scaled)
+print(data.head())
+
