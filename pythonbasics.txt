@@ -313,3 +313,19 @@ print(coefficients)
 
 import joblib
 joblib.dump(model, 'lrmodel sustainable.pkl')
+
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import silhouette_score
+
+data=pd.read_csv("environmental factors.csv")
+data.head()
+
+scaler = StandardScaler()
+data_scaled = scaler.fit_transform(data)
+print(pd.DataFrame(data_scaled, columns=data.columns).head())
+
